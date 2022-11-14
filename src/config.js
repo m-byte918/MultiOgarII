@@ -42,7 +42,7 @@ module.exports = Object.seal({
 "serverPort": process.env.PORT || 3000,
 "serverBind": "0.0.0.0",
 "serverTracker": 0,
-"serverGamemode": 2,
+"serverGamemode": 1,
 "serverBots": 0,
 "serverViewBaseX": 1920,
 "serverViewBaseY": 1080,
