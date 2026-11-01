@@ -14,9 +14,11 @@ class Experimental extends FFA {
     }
     // Gamemode Specific Functions
     spawnMotherCells(server) {
-        var mother = new Entity.MotherCell(server, null, server.randomPos(), 149);
         let diff = this.motherAmount - this.nodesMother.length;
-        while (--diff >= 0) server.safeSpawn(mother);
+        while (--diff >= 0) {
+            const mother = new Entity.MotherCell(server, null, server.randomPos(), 149);
+            server.safeSpawn(mother);
+        }
     }
     spawnCells(server) {
         this.spawnMotherCells(server);
